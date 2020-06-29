@@ -5,7 +5,8 @@
 ### 풀이
 
 ```shell
-> ls -m -p -u
+> nano midLS
+> # ls -m -p -u 타이핑 후 저장
 ```
 
 
