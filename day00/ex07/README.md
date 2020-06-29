@@ -6,7 +6,7 @@
 ### 풀이
 
 ```shell
-> patch -p0 < sw.diff
+> patch a sw.diff
 > cp a b
 ```
 
