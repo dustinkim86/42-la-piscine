@@ -31,7 +31,12 @@
 > chmod 504 test2
 > chmod 404 test3
 > chmod 641 test4
-> 
+> touch -t 202006012047 test0
+> touch -t 202006012146 test1
+> touch -t 202006012245 test2
+> touch -t 202006012344 test3
+> touch -t 202006012343 test4
+> touch -h -t 202006012220 test6
 > tar -cf exo2.tar *
 ```
 
