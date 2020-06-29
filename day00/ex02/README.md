@@ -31,8 +31,8 @@
 > chmod 504 test2
 > chmod 404 test3
 > chmod 641 test4
-> chmod 404 test5
+> 
 > tar -cf exo2.tar *
 ```
 
-
+[하드링크/심볼릭링크 자료](https://hack-cracker.tistory.com/95)
