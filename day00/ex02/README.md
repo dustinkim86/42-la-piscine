@@ -26,17 +26,20 @@
 > nano test4 # 띄어쓰기 1칸 후 저장
 > ln test3 test5 # ln : 링크파일 생성(하드링크)
 > ln -s test0 test6 # ln -s : 심볼릭 링크
+# chmod : 권한설정
 > chmod 715 test0
 > chmod 714 test1
 > chmod 504 test2
-> chmod 404 test3
+> chmod 404 test3 # test5는 하드링크로 test3을 가져온 것이기 때문에 따로 설정 필요 없음
 > chmod 641 test4
+# touch -t : 시간설정
 > touch -t 202006012047 test0
 > touch -t 202006012146 test1
 > touch -t 202006012245 test2
-> touch -t 202006012344 test3
+> touch -t 202006012344 test3 # test5는 하드링크로 test3을 가져온 것이기 때문에 따로 설정 필요 없음
 > touch -t 202006012343 test4
-> touch -h -t 202006012220 test6
+> touch -h -t 202006012220 test6 # 심볼릭링크는 -t 앞에 -h를 넣어주어야 함
+# -h : 참조 된 파일 대신 각 기호 링크에 영향을 주는 명령어
 > tar -cf exo2.tar *
 ```
 
