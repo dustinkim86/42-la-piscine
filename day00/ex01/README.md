@@ -8,3 +8,12 @@
 
 - 이전 단계 완료 후 다음 명령어를 실행하여 제출할 파일을 생성
   - tar -cf testShell00.tar testShell .
+
+
+
+### 풀이
+```shell
+> touch testShell00
+> chmod 455 testShell00
+> tar -cf testChell00.tar testShell .
+```
