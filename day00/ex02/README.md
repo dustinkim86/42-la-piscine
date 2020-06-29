@@ -20,10 +20,12 @@
 
 ```shell
 > mkdir test0
-> touch test1
+> nano test1 # 띄어쓰기 3칸 후 저장
 > mkdir test2
-> touch test3 test4 test5
-> ln -s test0 test6 # ln : 심볼릭 링크
+> nano test3 # 띄어쓰기 1칸 저장 후 다시 들어가서 모든 칸/줄 삭제
+> nano test4 # 띄어쓰기 1칸 후 저장
+> ln test3 test5 # ln : 링크파일 생성(하드링크)
+> ln -s test0 test6 # ln -s : 심볼릭 링크
 > chmod 715 test0
 > chmod 714 test1
 > chmod 504 test2
