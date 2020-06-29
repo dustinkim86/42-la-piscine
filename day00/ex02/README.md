@@ -30,6 +30,7 @@
 > chmod 404 test3
 > chmod 641 test4
 > chmod 404 test5
+> tar -cf exo2.tar *
 ```
 
 
