@@ -20,4 +20,5 @@ ls -l | awk '{if(NR % 2) print}'
 
 
 [awk 참고사이트1](https://zzsza.github.io/development/2017/12/20/linux-6/)
+<br/>
 [awk 참고사이트2](https://struggler.tistory.com/246)
