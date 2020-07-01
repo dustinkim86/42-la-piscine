@@ -6,7 +6,8 @@
 ### 풀이
 
 ```shell
-ls -l | awk '{if(NR % 2) print}'
+> nano skip.sh
+> ls -l | awk '{if(NR % 2) print}' 
 
 # awk : 데이터를 조작하고 리포트를 생성하기 위해 사용하는 명령어
 # awk 형식
