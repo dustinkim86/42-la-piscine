@@ -6,7 +6,7 @@
 ### 풀이
 
 ```shell
-ifconfig | grep eth | awk '{print $2}'
+ifconfig -a link | grep eth | awk '{print $2}'
 
 # ifconfig : 네트워크 인터페이스 설정하는 명령어
 # grep : 특정 문자열을 찾을 때 사용하는 명령어
