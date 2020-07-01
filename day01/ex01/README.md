@@ -14,7 +14,8 @@
 ### 풀이
 
 ```shell
-groups ${FT_USER} | tr ' ' ',' | cat -e
+> nano print_groups.sh
+> groups ${FT_USER} | tr ' ' ',' | cat -e
 
 # groups : 현재 쉘에 접속해 있는 유저가 속해 있는 그룹을 출력
 # tr : translate, 지정한 문자를 바꿔주거나(위와 같이 공백을 콤마로 변경) 삭제(tr -d)하는 명령
