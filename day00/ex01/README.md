@@ -19,3 +19,10 @@
 > touch -t 202006012342 testShell00 으로 시간 변경
 > tar -cf testShell00.tar testShell
 ```
+
+
+### 실행 테스트
+```shell
+> tar -xvf testShell00.tar
+> ls -l
+```
