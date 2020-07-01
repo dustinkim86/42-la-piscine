@@ -7,12 +7,11 @@
 ### 풀이
 
 ```shell
-find . -type f \( -name "*~" -o -name "#*#" \) > clean -print -delete
+find . -type f \( -name "*~" -o -name "#*#" \) -print -delete
 
 # . : 현재 디렛토리 아래 모든 파일 및 하위 디렉토리에서 파일 검색
 # -type f : regular file
 # \( -name "*~" -o -name "#*#" \) : name이 ~으로 끝나거나(-o(or)), #으로 시작하고 끝나는 파일
-# > clean : 출력 결과물을 clean에 저장
 # -print : 검색된 모든 파일 표시
 # -delete : 검색된 모든 파일 삭제
 ```
