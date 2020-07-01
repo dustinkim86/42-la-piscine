@@ -13,6 +13,7 @@
 ### 풀이
 
 ```shell
+> !#/bin/bash
 > nano count_files.sh
 > find . | wc -l | sed 's/ //g' 저장
 
