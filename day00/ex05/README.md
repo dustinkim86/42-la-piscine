@@ -19,6 +19,9 @@
 ```shell
 > nano git_commit.sh
 > # git rev-list --max-count=5 HEAD 저장 후 출력
+# rev-list : 어떤 커밋이 특정 변경을 일으켰는지 검색하는 명령어
+# --max-count=n : 출력되는 커밋 수를 제한하는 명령어 (-n <number> 또는 -<number> 로도 가능)
+# HEAD : 브랜치의 이름
 ```
 
 
