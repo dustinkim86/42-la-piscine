@@ -6,7 +6,7 @@
 
 ```shell
 > nano midLS
-> # ls -m -p -u 타이핑 후 저장
+> # ls -m -p -U -t 타이핑 후 저장
 ```
 
 
