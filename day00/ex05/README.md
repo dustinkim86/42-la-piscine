@@ -19,7 +19,6 @@
 ```shell
 > nano git_commit.sh
 > # git rev-list --max-count=5 HEAD 저장 후 출력
-> # 또는 git rev-list HEAD | head -6
 ```
 
 
