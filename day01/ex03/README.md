@@ -13,7 +13,8 @@
 ### 풀이
 
 ```shell
-find . | wc -l | sed 's/ //g'
+> nano count_files.sh
+> find . | wc -l | sed 's/ //g' 저장
 
 # . : 현재 디렉토리 및 하위의 모든 디렉토리 전부 탐색
 # wc : 사용자가 지정한 파일의 행, 단어, 문자수를 세는 명령어
