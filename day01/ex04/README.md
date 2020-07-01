@@ -9,6 +9,8 @@
 ifconfig -a link | grep eth | awk '{print $2}'
 
 # ifconfig : 네트워크 인터페이스 설정하는 명령어
+# -a : 전체(all)
+# link : 링크 레벨(?)
 # grep : 특정 문자열을 찾을 때 사용하는 명령어
 # awk : 리눅스 파일 텍스트 데이터 검사/조작/출력 명령어
 ```
