@@ -6,7 +6,8 @@
 ### 풀이
 
 ```shell
-ifconfig -a link | grep eth | awk '{print $2}'
+> nano MAC.sh
+> ifconfig -a link | grep eth | awk '{print $2}' 저장
 
 # ifconfig : 네트워크 인터페이스 설정하는 명령어
 # -a : 전체(all)
