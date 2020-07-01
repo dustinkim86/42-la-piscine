@@ -16,6 +16,6 @@
 > nano testShell00
 > 40byte 만큼 임의의 데이터를 생성
 > chmod 455 testShell00
-> touch -t 202006012342 로 시간 
+> touch -t 202006012342 testShell00 으로 시간 변경
 > tar -cf testChell00.tar testShell .
 ```
