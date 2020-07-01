@@ -7,7 +7,7 @@
   ```
 
 - 이전 단계 완료 후 다음 명령어를 실행하여 제출할 파일을 생성
-  - tar -cf testShell00.tar testShell .
+  - tar -cf testShell00.tar testShell
 
 
 
@@ -17,5 +17,5 @@
 > 40byte 만큼 임의의 데이터를 생성
 > chmod 455 testShell00
 > touch -t 202006012342 testShell00 으로 시간 변경
-> tar -cf testChell00.tar testShell .
+> tar -cf testShell00.tar testShell
 ```
