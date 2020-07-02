@@ -16,7 +16,7 @@ void	ft_print_alphabet(void)
     i = 'a';
     while (i <= 'z')
     {
-        write('%c', i);
+        write(1, &i, 1);
         i++;
     }
 }
