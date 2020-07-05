@@ -15,7 +15,7 @@
 ### 풀이
 
 ```shell
-cat /etc/passwd | grep -v ^# | awk '{if(NR % 2) print}' | rev | cut -d ":" -f7 | sort -r | awk '{if(NR >= ENVIRON["FT_LINE1"] && NR <= ENVIRON["FT_LINE2"]) print}' | sed 's/$/,/g' | tr "\n" " " | sed 's/$/./g'
+cat /etc/passwd | grep -v ^# | awk '{if(NR % 2) print}' | rev | cut -d ":" -f7 | sort -r | awk '{if(NR >= ENVIRON["FT_LINE1"] && NR <= ENVIRON["FT_LINE2"]) print}' | sed 's/$/,/g' | tr "\n" " " | sed 's/, $/./g' | tr -d '\n'
 
 # grep -v <pattern> : 지정한 패턴과 일치하지 않는 것만 선택
 # awk '{if(NR % 2) print}' : NR % 2 == 0 인것만 선택
