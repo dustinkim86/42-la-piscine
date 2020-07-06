@@ -17,6 +17,7 @@
 
 ```shell
 > nano find_sh.sh
+> find . -type f -name "*.sh" | sed 's/.\///g' | sed 's/\.sh//g'
 > find . -type f -name "*.sh" -exec basename {} .sh \;
 
 # . : 해당 디렉토리의 하위 디렉토리를 전부 포함하여 검색
