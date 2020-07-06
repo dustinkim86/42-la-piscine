@@ -15,10 +15,10 @@
 ### 풀이
 
 ```shell
-cat /etc/passwd | grep -v ^# | awk '{if(NR % 2) print}' | rev | cut -d ":" -f7 | sort -r | awk '{if(NR >= ENVIRON["FT_LINE1"] && NR <= ENVIRON["FT_LINE2"]) print}' | sed 's/$/,/g' | tr "\n" " " | sed 's/, $/./g' | tr -d '\n'
+cat /etc/passwd | grep -v ^# | awk '{if(NR % 2==0) print}' | rev | cut -d ":" -f7 | sort -r | awk '{if(NR >= ENVIRON["FT_LINE1"] && NR <= ENVIRON["FT_LINE2"]) print}' | sed 's/$/,/g' | tr "\n" " " | sed 's/, $/./g' | tr -d '\n'
 
 # grep -v <pattern> : 지정한 패턴과 일치하지 않는 것만 선택
-# awk '{if(NR % 2) print}' : NR % 2 == 0 인것만 선택
+# awk '{if(NR % 2==0) print}' : NR % 2 == 0 인것만 출력
 # rev : 한 행의 내용을 거꾸로 출력
 # sort -r : 내림차순(알파벳 역순)
 # awk '{if(NR >= ENVIRON["FT_LINE1"] && NR <= ENVIRON["FT_LINE2"]) print}' : NR이 FT_LINE1 보다 크거나 같고, NR이 FT_LINE2 보다 작거나 같은 조건만 선택
