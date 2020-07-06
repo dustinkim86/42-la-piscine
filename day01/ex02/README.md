@@ -18,7 +18,8 @@
 ```shell
 > nano find_sh.sh
 > find . -type f -name "*.sh" | sed 's/.\///g' | sed 's/\.sh//g'
-> find . -type f -name "*.sh" -exec basename {} .sh \;
+
+# 이런 것도 있더라.. find . -type f -name "*.sh" -exec basename {} .sh \;
 
 # . : 해당 디렉토리의 하위 디렉토리를 전부 포함하여 검색
 # -name XX : XX 이름 또는 조건을 가진 파일명을 검색
