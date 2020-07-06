@@ -17,12 +17,13 @@
 
 ```shell
 > nano find_sh.sh
-> find . -type f -name "*.sh" | sed 's/.\///g' | sed 's/\.sh//g'
-
-# 이런 것도 있더라.. find . -type f -name "*.sh" -exec basename {} .sh \;
+> find . -type f -name "*.sh" -exec basename {} .sh \; | sed 's/.sh$//'
 
 # . : 해당 디렉토리의 하위 디렉토리를 전부 포함하여 검색
 # -name XX : XX 이름 또는 조건을 가진 파일명을 검색
+# -exec : 선언 전의 왼쪽 데이터를 오른쪽으로 보냄
+# basename {} .sh \; : 데이터들의 최종 위치들의 파일들만을 보여줌 + .sh로 끝나느 데이터만 출력 + \; 으로 줄 넘김
+# sed 's/.sh$//' : .sh로 끝나는 이름의 .sh 삭제
 ```
 
 [정규표현식 참고사이트](https://zzsza.github.io/development/2017/12/13/linux-3/)
