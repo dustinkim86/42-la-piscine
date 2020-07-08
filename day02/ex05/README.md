@@ -17,34 +17,39 @@
 ```c
 #include <unistd.h>
 
+void	print_numbers(int *number)
+{
+	write(1, &number[0], 1);
+	write(1, &number[1], 1);
+	write(1, &number[2], 1);
+	if (number[0] != 55)
+		write(1, &", ", 2);
+}
+
 void	ft_print_comb(void)
 {
-    int numbers[3] = {48, 48, 48};
-    
-    while (numbers[0] <= 57)
-    {
-    	if ((numbers[0] < numbers[1]) && (numbers[1] < numbers[2]))
-        {
-            write(1, &numbers[0], 1);
-            write(1, &numbers[1], 1);
-            write(1, &numbers[2], 1);
-            if (numbers[0] != 55)
-            {
-                write(1, &", ", 2);
-            }
-        }
-        if (numbers[2]++ >= 57)
-        {
-            numbers[2] = 48;
-            numbers[1]++;
-        }
-        if (numbers[1] == 58)
-        {
-            numbers[1] = 48;
-            numbers[0]++;
-        }
-    }
+	int number[3];
+
+	number[0] = 48;
+	number[1] = 48;
+	number[2] = 48;
+	while (number[0] <= 57)
+	{
+		if ((number[0] < number[1]) && (number[1] < number[2]))
+			print_numbers(number);
+		if (number[2]++ >= 57)
+		{
+			number[2] = 48;
+			number[1]++;
+		}
+		if (number[1] == 58)
+		{
+			number[1] = 48;
+			number[0]++;
+		}
+	}
 }
+
 ```
 
 
