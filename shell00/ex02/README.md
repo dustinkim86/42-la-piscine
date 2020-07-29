@@ -16,7 +16,7 @@
 
 
 
-### 풀이
+#### 풀이
 
 ```shell
 > mkdir test0
@@ -46,7 +46,7 @@
 [하드링크/심볼릭링크 자료](https://hack-cracker.tistory.com/95)
 
 
-### 실행 테스트
+#### 실행 테스트
 ```shell
 > tar -xvf exo2.tar
 > ls -l
