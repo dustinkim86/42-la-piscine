@@ -6,7 +6,7 @@
 /*   By: junhokim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/22 13:03:57 by junhokim          #+#    #+#             */
-/*   Updated: 2020/07/22 13:03:58 by junhokim         ###   ########.fr       */
+/*   Updated: 2020/07/23 02:11:42 by junhokim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void				ft_strcpy(char *dest, char *src)
 			dest[i] = src[i];
 			i++;
 		}
-	dest[i] = '\0';
+	dest[i] = 0;
 }
 
 struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
@@ -54,6 +54,6 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 		ft_strcpy(arrs[i].copy, av[i]);
 		++i;
 	}
-	arrs[i].str = '\0';
+	arrs[i].str = 0;
 	return (arrs);
 }

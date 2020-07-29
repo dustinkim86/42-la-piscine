@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: junhokim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/24 19:46:37 by junhokim          #+#    #+#             */
-/*   Updated: 2020/07/24 19:46:39 by junhokim         ###   ########.fr       */
+/*   Created: 2020/07/24 20:48:12 by junhokim          #+#    #+#             */
+/*   Updated: 2020/07/24 20:48:14 by junhokim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int				ft_count_if(char **tab, int length, int (*f)(char*))
 {
-	int i;
+	int			i;
+	int			count;
 
 	i = 0;
-	while (str[i])
+	count = 0;
+	while (i < length)
+	{
+		if ((*f)(*(tab + i)) != 0)
+			count++;
 		i++;
-	return (i);
+	}
+	return (count);
 }

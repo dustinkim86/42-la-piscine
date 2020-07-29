@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: junhokim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/24 19:46:37 by junhokim          #+#    #+#             */
-/*   Updated: 2020/07/24 19:46:39 by junhokim         ###   ########.fr       */
+/*   Created: 2020/07/24 20:47:17 by junhokim          #+#    #+#             */
+/*   Updated: 2020/07/24 20:47:18 by junhokim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+void		ft_foreach(int *tab, int length, void (*f)(int))
 {
-	int i;
+	int		i;
 
 	i = 0;
-	while (str[i])
+	while (i < length)
+	{
+		(*f)(*(tab + i));
 		i++;
-	return (i);
+	}
 }

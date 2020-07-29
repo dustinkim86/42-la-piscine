@@ -13,35 +13,35 @@
 #include <unistd.h>
 #include "ft_stock_str.h"
 
-void	print_size(int size)
+void				ft_putstr(char *str)
 {
-	char c;
-
-	if (size == 0)
-		return ;
-	c = '0' + size % 10;
-	print_size(size / 10);
-	write(1, &c, 1);
+	while (*str)
+	{
+		write(1, str, 1);
+		str++;
+	}
 }
 
-void	ft_show_tab(struct s_stock_str *arrs)
+void				ft_putnbr(int number)
 {
-	int i;
+	if (number > 9)
+		ft_putnbr(number / 10);
+	write(1, &"0123456789"[number % 10], 1);
+}
 
-	i = 0;
-	while (arrs[i].str)
+void				ft_show_tab(struct s_stock_str *par)
+{
+	int	index;
+
+	index = 0;
+	while (par[index].str != 0)
 	{
-		write(1, arrs[i].str, arrs[i].size);
-		write(1, "\n", 1);
-		if (arrs[i].size)
-			print_size(arrs[i].size);
-		else
-		{
-			write(1, "\0", 1);
-		}
-		write(1, "\n", 1);
-		write(1, arrs[i].copy, arrs[i].size);
-		write(1, "\n", 1);
-		++i;
+		ft_putstr(par[index].str);
+		ft_putstr("\n");
+		ft_putnbr(par[index].size);
+		ft_putstr("\n");
+		ft_putstr(par[index].copy);
+		ft_putstr("\n");
+		index++;
 	}
 }
