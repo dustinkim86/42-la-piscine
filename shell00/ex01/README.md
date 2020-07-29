@@ -11,7 +11,7 @@
 
 
 
-### 풀이
+#### 풀이
 ```shell
 > nano testShell00
 > 40byte 만큼 임의의 데이터를 생성
@@ -21,7 +21,7 @@
 ```
 
 
-### 실행 테스트
+#### 실행 테스트
 ```shell
 > tar -xvf testShell00.tar
 > ls -l
