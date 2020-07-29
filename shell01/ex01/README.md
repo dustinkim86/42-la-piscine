@@ -11,7 +11,7 @@
     daemon,bin$>
     ```
 
-### 풀이
+#### 풀이
 
 ```shell
 > nano print_groups.sh
