@@ -2,7 +2,7 @@
 
 
 
-### 풀이
+#### 풀이
 
 ```shell
 > nano midLS
