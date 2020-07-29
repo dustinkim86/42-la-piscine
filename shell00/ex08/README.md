@@ -4,7 +4,7 @@
 
 
 
-### 풀이
+#### 풀이
 
 ```shell
 find . -type f \( -name "*~" -o -name "#*#" \) -print -delete
