@@ -10,7 +10,7 @@
 
 
 
-### 풀이
+#### 풀이
 
 ```shell
 > nano git_ignore.sh
