@@ -12,7 +12,7 @@
 
 
 
-### 풀이
+#### 풀이
 
 ```shell
 cat /etc/passwd | grep -v ^# | awk '{if(NR % 2==0) print}' | rev | cut -d ":" -f7 | sort -r | awk '{if(NR >= ENVIRON["FT_LINE1"] && NR <= ENVIRON["FT_LINE2"]) print}' | sed 's/$/,/g' | tr "\n" " " | sed 's/, $/./g' | tr -d '\n'
